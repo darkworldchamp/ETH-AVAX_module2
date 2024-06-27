@@ -62,6 +62,8 @@ contract Assessment {
         require(msg.sender == owner, "Only the owner can perform this action");
         _;
     }
+
+//HERE IS THE FIRST FUNCTION WHICH CAN TRANSFER OWNER OF THE CURRENT ACCOUNT TO A NEW ONE
     function transferOwnership(address payable _newOwner) public onlyOwner {
         require(_newOwner != address(0), "Invalid new owner address");
 
@@ -70,7 +72,7 @@ contract Assessment {
 
         emit OwnershipTransferred(previousOwner, _newOwner);
     }
-
+//THIS FUNCTION WILL DESTROY THE CURRENT CONRACT WHEN THE OWNER CLICK DESTROY CONTRACT BUTTON 
     function destroyContract() public {
         require(msg.sender == owner, "You are not the owner of this account");
 
