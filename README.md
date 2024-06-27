@@ -10,3 +10,11 @@ After cloning the github, you will want to do the following to get the code runn
 
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
+
+
+ABOUT ADDING TWO NEW FUNCTIONS
+1. transfer ownership - which can the current owner to new owner through the new owner address
+2. destroy contract - this function can destroy current contract required the owner is handling the account.
+
+OTHERS 
+I also added some baggroung colors borders and button colors for the attractive look of my frontend .
