@@ -1,6 +1,6 @@
 # Smart contract Management
 
-In this project I have connected a solidity contract with a frontend .
+A smart contract with frontend connectivity using hardhat . In this project I have connected a solidity contract with frontend and added functionalitites to it.
 
 ## Description
 
