@@ -24,8 +24,8 @@ After cloning the github, you will want to do the following to get the code runn
 After this, the project will be running on your localhost. 
 Typically at ``` http://localhost:3000/```
 
-Requirements
-Solidity version: ^0.8.20
-OpenZeppelin Contracts: Used for ERC20, Ownable, and ERC20Burnable implementations.
-License
-This project is licensed under the MIT License.
+# Requirements
+ Solidity version: ^0.8.20
+
+# License
+ This project is licensed under the MIT License.
