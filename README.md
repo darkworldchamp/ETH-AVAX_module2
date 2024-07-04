@@ -1,13 +1,34 @@
-# Smart contract Management
+# Smart Contract Managemenet
 
-A smart contract with frontend connectivity using hardhat . In this project I have connected a solidity contract with frontend and added functionalitites to it.
+This Solidity smart contract (`Assessment.sol`) manages an account with functionalities for deposit, withdraw, ownership transfer, and contract destruction. Below are the key features and usage instructions:
 
 ## Description
 
-Here I have added two working functions namely transferOwnership and destroyContract which can triggered whenever called through clicking their erspective button .
-Basically we can transferOwnership to some other account using transferOwnership function while if we want to destroy the current contract we can use destroy Contract function .
-Also I have addeed some creativity to the frontend like adding background colors for buton containers and adding borders and margins as well . 
+1. **Constructor**
+   - Initializes the contract with an initial balance provided by the deployer.
 
+2. **Functions**
+   - `getBalance()`: Returns the current balance of the contract.
+   - `deposit(uint256 _amount)`: Allows the owner to deposit additional funds into the contract.
+   - `withdraw(uint256 _withdrawAmount)`: Allows the owner to withdraw funds from the contract, subject to sufficient balance.
+   - `transferOwnership(address payable _newOwner)`: Transfers ownership of the contract to a new address.
+   - `destroyContract()`: Destroys the contract, transferring any remaining funds to the owner and emitting an event.
+
+3. **Events**
+   - `Deposit(uint256 amount)`: Triggered upon a successful deposit.
+   - `Withdraw(uint256 amount)`: Triggered upon a successful withdrawal.
+   - `OwnershipTransferred(address indexed previousOwner, address indexed newOwner)`: Triggered when ownership is transferred.
+   - `ContractDestroyed(address indexed contractAddress, address indexed destroyer)`: Triggered when the contract is destroyed.
+
+4. **Modifiers**
+   - `onlyOwner`: Restricts access to functions only to the current owner.
+
+## Usage
+ **Interacting with the Contract**
+   - Use `deposit` to add funds.
+   - Use `withdraw` to remove funds.
+   - Use `transferOwnership` to transfer ownership to a new address.
+   - Use `destroyContract` to destroy the contract and transfer remaining funds back to the owner.
 
 # Execution 
 
